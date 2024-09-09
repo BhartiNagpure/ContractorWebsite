@@ -1,38 +1,307 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League Spartan:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotham:wght@400;500;600;700&display=swap');
+
+
+
+/* Navbar css */
+.nav-link {
+    font-weight: 500;
+    color: #fff;
+    font-size: large;
+    padding: 0px 15px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active-link {
+    color: #4F1000 !important;
+    font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Homepage css */
+.banner {
+    background: url('./assest/bgImage/banner.png') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    z-index: 2;
+    position: relative;
+    margin-top: -490px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.banner p,
+.about-div p {
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.heading2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FDC200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-bottom: 0px; */
+    color: #4F1000;
+    position: relative;
+    display: inline-block;
+}
+
+.heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    border-bottom: 4px solid #FDC200;
+    position: absolute;
+}
+
+.about-div {
+    font-family: 'Inter', sans-serif;
+    margin-top: 200px;
+}
+
+
+.block {
+    background-color: #4F1000;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.blockdiv p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+/* .projectdiv {
+    background: url('./assest/bgImage/projectbgtop.png') no-repeat center center;
+    background-size: cover;
+
+}
+
+.project-subdiv {
+    background: url('./assest/bgImage/projectbg.png') no-repeat center center;
+    background-size: cover;
+
+} */
+
+
+
+
+.content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.founder {
+    background: #4F1000;
+    width: 100%;
+    /* height: 400px; */
+}
+
+.testimonial .card {
+    border-radius: 30px;
+}
+
+.card p,
+.address p,
+.services p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.profile {
+    position: relative;
+    top: -70px;
+}
+
+.contact .card {
+    border-radius: 20px;
+    background-color: #FDC200;
+    border: none;
+}
+
+.form-control {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F6EFEF;
+}
+
+.form-control::placeholder {
+    font-size: 18px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+}
+
+.contact .btn {
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Footerpage  css */
+.footer {
+    background-color: #4F1000;
+    font-family: 'Goutham', sans-serif;
+}
+
+hr {
+    border: 1px solid #FFFF;
+    width: 100%;
+}
+
+.footer h6 {
+    color: #FFB624;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer span,
+.footer-text {
+    color: #F6EFEF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footsubtext {
+    font-weight: 400;
+    color: #F6EFEF;
+}
+
+.foot-icon {
+    width: 35px;
+    font-size: 25px;
+    color: #FFB624;
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #FFB624;
+}
+
+
+/* Contactpage css */
+
+
+.contactpage .banner {
+    position: relative;
+    background: url('./assest/bgImage/contactbg.png') no-repeat center center;
+    background-size: cover;
+}
+
+.contactpage .banner::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgb(157 24 0 / 72%);
+    z-index: 1;
+}
+
+.heading2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.heading3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.footerbar {
+    background-color: #FFDF37;
+}
+
+/* servicepage css */
+
+.service-banner {
+    position: relative;
+    background-size: cover;
+    height: 70vh;
+    z-index: 2;
+    position: relative;
+    margin-top: -490px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicecard {
+    background-color: #4F1000;
+}
+
+.servicecard .card {
+    background: url('./assest//bgImage//servicebg.png');
+    border-radius: 20px;
+    height: 350px;
+}
+
+.why .btn {
+    border-radius: 0px 20px 20px 20px !important;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4F1000;
+}
+
+.servicecard .body {
+    background-color: #805400;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.about-founder {
+    background-color: #4F1000;
+    color: #F6EFEF !important;
+    border-radius: 30px;
+}
+
+.aboutimg img,
+.about-founder img {
+    border-radius: 30px;
+}
+
+.gimages img {
+    border-radius: 15px;
+}
+
+.gimages .img1 {
+    height: 20px !important;
+}
+
+.about-founder .btn {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0400D3;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.img1 img {
+    width: 100%;
+    height: 60px !important;
+}
+
+.img2 img {
+    width: 100%;
+    height: 90px !important;
+}
+
+.work {
+    background-color: #FFB624;
 }
